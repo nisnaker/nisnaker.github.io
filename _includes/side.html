@@ -1,8 +1,14 @@
-<h2>Blog</h2>
+<div>
+	<h2>blog.tinybit.cn</h2>
+</div>
 
 <div class="menu">
 	{% assign url = page.url|remove:'index.html' %}
 	{% for menu in site.menus %}
 	<a href="{{ menu.url }}" class="menu-item {% if url == menu.url %}active{% endif %}">{{ menu.text }} <span class="pull-right">»</span></a>
 	{% endfor %}
+</div>
+
+<div>
+	Theme under <a href="https://hackcss.egoist.moe/" target="_blank">hackcss</a>.
 </div>

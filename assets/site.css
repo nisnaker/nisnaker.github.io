@@ -1,11 +1,4 @@
-.side {
-	padding-right: 10px;
-}
-
-.side h2 {
-	margin-top: 20px;
-}
-
-.footer {
-	padding-bottom: 20px;
+.side div {
+	margin: 20px 0;
+	padding-right: 20px;
 }
