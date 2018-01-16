@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<meta content="yes" name="mobile-web-app-capable">
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://cdn.bootcss.com/hack/0.8.0/hack.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body class="hack">
+	<div class="container grid">
+		<div class="side cell -3of12">
+			{% include side.html %}
+		</div>
+		<div class="cell -9of12">
+			{{ content }}
+			<hr>
+		</div>
+		<div class="footer">
+			{% include footer.html %}
+		</div>
+	</div>
+</body>
+</html>
