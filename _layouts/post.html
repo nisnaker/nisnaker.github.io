@@ -7,3 +7,19 @@ layout: default
 
 <p> &nbsp; </p>
 <p>{{ site.end_word }}</p>
+
+<div id="gitment"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  // id: '页面 ID', // 可选。默认为 location.href
+  owner: 'nisnaker',
+  repo: 'nisnaker.github.io',
+  oauth: {
+    client_id: 'f389e4634a97e6016e4d',
+    client_secret: 'd6073fb4a70467f495705d6f9d16d285272c1de9',
+  },
+})
+gitment.render('gitment')
+</script>
