@@ -8,7 +8,17 @@
 }
 
 .hack pre {
-	padding: 1rem;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.hack .rouge-code pre {
+	width: 46rem;
+}
+
+.hack pre table {
+	margin: 0;
 }
 
 .hack pre code {
